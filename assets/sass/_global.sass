@@ -1,0 +1,64 @@
+body
+	background: url("../img/svg/bg.svg") top center repeat	
+.container
+	+container-fixed
+	@media (min-width: $screen-sm-min)
+		width: $container-sm
+	@media (min-width: $screen-md-min)
+		width: $container-md
+	@media (min-width: $screen-lg-min)
+		width: $container-lg
+	@media (min-width: $screen-xlg-min)
+		width: $container-xlg
+.wrap 
+	background-color: #fff	
+h2
+	color: $primary
+	margin: 0 0 0.5em
+	font-size: 2.3em
+input
+	+transition(all 0.2s ease-in)
+	+fancy-input	
+	&:hover
+		border-color: $secondary
+		&::-webkit-input-placeholder
+			color: $secondary
+	&:focus
+		border-color: $secondary
+		color: $secondary		
+		&::-webkit-input-placeholder
+			color: $secondary	
+textarea 	
+	+transition(all 0.2s ease-in)
+	+fancy-input
+	display: block
+	width: 100%
+	&:hover
+		border-color: $secondary
+		&::-webkit-input-placeholder
+			color: $secondary
+	&:focus
+		border-color: $secondary
+		color: $secondary		
+		&::-webkit-input-placeholder
+			color: $secondary		
+blockquote
+	quotes: "\201C""\201D""\2018""\2019"
+	p 
+		display: inline
+	&:before
+		color: #ccc
+		content: "\201C"
+		font-size: 4em
+		line-height: 0.1em
+		margin-right: 0.25em
+		vertical-align: -0.4em
+	&:after
+		color: #ccc
+		content: "\201D"
+		font-size: 4em
+		line-height: 0.1em
+		margin-left: 0.1em
+		vertical-align: -0.6em
+  
+				

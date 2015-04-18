@@ -1,0 +1,72 @@
+.header
+	@extend .container
+	+clearfix	
+	padding-top: 38px
+	margin-bottom: 38px
+.logo
+	+make-sm-column(4)
+	padding-left: 0
+.header-social
+	+make-sm-column(8)
+	text-align: right
+	padding: 0
+	p 
+		font-weight: 700
+		line-height: 40px	
+	ul 
+		+h-nav
+		display: inline-block
+	a 		
+		width: 42px
+		height: 42px
+		display: block
+		overflow: hidden
+		background-size: 100% 200%
+		background-repeat: no-repeat
+		text-indent: 9999px
+		margin-left: 36px
+		&:hover
+			background-position: bottom			
+	.facebook
+		background-image: url(../img/svg/facebook.svg)
+	.flickr
+		background-image: url(../img/svg/flickr.svg)
+	.instagram
+		background-image: url(../img/svg/instagram.svg)
+	.linkedin
+		background-image: url(../img/svg/linkedin.svg)			
+.no-svg
+	.facebook
+		background-image: url(../img/svg/facebook.svg)
+		background-color: red	
+.footer
+	width: 80%
+	padding-top: 2em
+	margin: 0 auto
+	text-align: left
+	padding-bottom: 2em
+	h5
+		font-size: 1.7em	
+	.form-footer
+		margin-bottom: 2em
+		input 
+			width: 12em 
+			margin-right: 10px
+		button
+			+transition(all 0.2s ease-in)
+			+fancy-input
+			font-weight: 700
+			background-image: none
+			background-color: #fff
+			color: $primary
+			border-color: $primary
+			text-align: center
+			width: 12em
+			&:hover
+				color: $secondary
+				border-color: $secondary
+	.footer-content
+		img 
+			margin-bottom: 1em
+		p
+			margin-bottom: 0.2em

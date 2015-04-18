@@ -1,0 +1,28 @@
+.main-nav	
+	background-color: #000
+	position: relative
+	z-index: 2	
+	text-align: center
+	padding: 1em 0	
+	@media (min-width: $screen-lg-min)
+		margin-top: -20px
+	ul
+		+h-nav
+		display: inline-block
+	li 
+		padding: 0 2em	
+	a
+		+nav-level-1(#000,#fff,#000,$secondary)		
+		font-weight: 700
+		padding: 0.2em 0.5em
+		border: 2px solid #000
+		&:hover 
+			color: $secondary
+			border: 2px solid $secondary
+		&.active
+			color: $primary
+			border: 2px solid $primary
+	
+
+	
+								

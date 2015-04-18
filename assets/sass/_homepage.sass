@@ -1,0 +1,139 @@
+.featured
+	text-align: center
+	font-size: 1.2em
+	padding: 2.5em 0
+	font-weight: 700	
+	background-repeat: no-repeat
+	background-position: center -170px
+	margin-bottom: 2em
+	+transition(all 0.3s linear)
+	.article-content
+		margin-bottom: 3em	
+	p 
+		margin-bottom: 0
+	a 
+		line-height: 50px	
+		margin-top: 3em
+.featured-next-workshop
+	width: 80%
+	margin: 0 auto
+	text-align: center
+	margin-bottom: 1em
+	+clearfix
+	.half 
+		margin-bottom: 1em
+		height: 200px	
+	.half:nth-child(2n+1)
+		border-right: 1px solid #000
+		border-left: none	
+	.half:nth-child(2n)
+		border-left: 1px solid #000
+		border-right: none	
+	.button-container
+		+clearfix
+		a	
+			font-size: 1.1em
+.next-workshop 
+	+clearfix
+	.next-workshop-main
+		+clearfix
+		margin-bottom: 2em
+.half
+	+make-sm-column(6)
+	margin-bottom: 2em
+.workshop
+	text-align: center
+	p 	
+		margin-bottom: 0.2em	
+	p.special 	
+		color: $primary	
+		font-size: 1.3em		
+		font-weight: 700		
+h3 
+	font-size: 1.7em
+	line-height: 1
+	text-align: center
+	margin-bottom: 0.5em	
+.text-only
+	text-align: center
+	width: 80%
+	margin: 0 auto
+.full
+	+make-sm-column(12)
+	text-align: center
+	margin-bottom: 2em
+	p 
+		margin-bottom: 0.2em
+	.bf 
+		font-size: 1.3em
+		font-weight: 700
+.last-workshop-list
+	+clearfix
+	.last-workshop-item
+		img 
+			margin-bottom: 0.5em
+.next-workshop-sign
+	@extend .btn-main
+	display: block
+	width: 70%
+	font-size: 1.5em
+	margin: 0 auto 1em
+.speaker-list
+	+clearfix
+	.workshop
+		width: 80%
+		margin: 0 auto
+.main 
+	+clearfix		
+.narrow
+	max-width: 500px
+	margin: 0 auto			
+.form-sign-up
+	width: 70%
+	margin: 0 auto 1em
+	+clearfix
+	h2 
+		text-align: center
+	input		
+		display: block
+		width: 100%
+		margin-bottom: $spacing*2
+		padding: 0.7em
+	textarea 
+		max-width: 100%
+		min-height: 4em	
+	.form-item
+		+make-sm-column(4)
+	.form-textarea
+		+make-sm-column(12)
+		margin-bottom: $spacing*2	
+	.button-container
+		+make-sm-column(12)	
+.sign-up 
+	@extend .btn-main
+	display: block
+	width: 100%
+	font-size: 1.5em
+	&:hover 
+		color: $secondary
+.narrow-wrap
+	+clearfix
+	width: 70%
+	margin: 0 auto
+	text-align: center
+	margin-bottom: 1em	
+	.full 
+		margin-top: 2em
+	.narrow-article
+		+make-sm-column(4)
+		margin-bottom: 1em
+		h2 
+			margin-bottom: 0.2em
+		a 
+			display: block
+			text-align: center	
+.view-workshops
+	@extend .btn-main
+	margin: 0 auto
+	margin-bottom: 1em
+	font-size: 1.2em

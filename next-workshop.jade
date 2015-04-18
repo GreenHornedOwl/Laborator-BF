@@ -1,0 +1,51 @@
+extend jade.resources/layout/master
+block content	
+	.wrap
+		section.featured(style='background-image: url("assets/img/noi.jpg")')
+			article.container
+				h2 Conceptul de Laborator
+				.article-content
+					p Incurajam oamenii de business sa breakthrough in their category,
+					p invatand prin aplicatii practice ce rezultate poate aduce brandingul.
+				a(href='#' class='btn-main') Watch our story
+		.container		
+			section.row.next-workshop
+				article.next-workshop-main
+					.half					
+						.workshop
+							p Tema:
+							p.special Graphic design sau arta moderna?
+							p Trainer:
+							p.special James Victore						
+							p Data:
+							p.special 13 februarie 2015
+							p Locatia:
+							p.special Hotel Rin Grand Bucharest
+							p Pretul:
+							p.special 450 E/participant
+					.half
+						img(src='assets/img/speaker.jpg' class='img-responsive')
+				.half
+					article.text-only
+						h3 The reason
+						p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.
+				.half
+					article.text-only
+						h3 Avantajele participarii tale
+						p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.		
+			section.form-sign-up
+				h2 Inscriete la Workshop!
+				.form-item
+					input(type='text' placeholder='Nume...')
+				.form-item		
+					input(type='text' placeholder='Prenume...')
+				.form-item
+					input(type='text' placeholder='Companie...')
+				.form-item		
+					input(type='text' placeholder='Email...')
+				.form-item		
+					input(type='text' placeholder='Telefon...')
+				.form-textarea		
+					textarea(placeholder='Mesaj')
+				.button-container
+					button(class='sign-up') Inregistreaza-te acum!

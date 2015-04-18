@@ -1,0 +1,23 @@
+{
+  "name": "Brandfusion Laboratory",
+  "version": "1.0.0",
+  "authors": [
+    "Daniel Voicu <daniel.voicu@brandfusion.ro>"
+  ],
+  "description": "",
+  "license": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "modernizr": "~2.8.3",
+    "bootstrap-sass": "~3.3.3",
+    "owl-carousel2": "*"
+  }
+}
