@@ -1,6 +1,5 @@
 .featured
-	text-align: center
-	font-size: 1.2em
+	text-align: center	
 	padding: 2.5em 0
 	font-weight: 700	
 	background-repeat: no-repeat
@@ -11,9 +10,7 @@
 		margin-bottom: 3em	
 	p 
 		margin-bottom: 0
-	a 
-		line-height: 50px	
-		margin-top: 3em
+		font-size: 1.2em
 .featured-next-workshop
 	width: 80%
 	margin: 0 auto
@@ -38,6 +35,12 @@
 	.next-workshop-main
 		+clearfix
 		margin-bottom: 2em
+		.full
+			margin: 0
+			h2 
+				text-align: center
+			.half
+				margin: 0	
 .half
 	+make-sm-column(6)
 	margin-bottom: 2em
@@ -73,11 +76,7 @@ h3
 		img 
 			margin-bottom: 0.5em
 .next-workshop-sign
-	@extend .btn-main
-	display: block
-	width: 70%
-	font-size: 1.5em
-	margin: 0 auto 1em
+	@extend .btn-large
 .speaker-list
 	+clearfix
 	.workshop
@@ -108,14 +107,7 @@ h3
 		+make-sm-column(12)
 		margin-bottom: $spacing*2	
 	.button-container
-		+make-sm-column(12)	
-.sign-up 
-	@extend .btn-main
-	display: block
-	width: 100%
-	font-size: 1.5em
-	&:hover 
-		color: $secondary
+		+make-sm-column(12)
 .narrow-wrap
 	+clearfix
 	width: 70%
@@ -132,8 +124,70 @@ h3
 		a 
 			display: block
 			text-align: center	
-.view-workshops
-	@extend .btn-main
-	margin: 0 auto
-	margin-bottom: 1em
-	font-size: 1.2em
+.newsletter-sign-up
+	@extend .btn-large
+.program-list
+	+clearfix
+	h3
+		margin-bottom: 1em
+	.half
+		margin-bottom: 2em	
+	.half:nth-child(2n)
+		border-right: 1px solid #000
+	.half:nth-child(2n+1)
+		border-left: 1px solid #000	
+.workshop-selected-content
+	p 
+		width: 70%
+		margin: 0 auto
+		text-align: center
+	a 
+		display: block
+		text-align: center
+	.half
+		min-height: 200px
+	.download-pdf
+		background-image: url(../img/svg/pdf.svg)
+		background-repeat: no-repeat
+		background-position: left top
+		background-size: 100% 200%
+		font-size: 1.2em
+		font-weight: 700
+		height: 90px
+		text-align: left
+		padding-left: 210px
+		padding-top: 33px	
+		&:hover
+			background-position: left bottom
+.gallery-wrap
+	+transition(all 0.5s ease-in)
+	position: relative
+	margin-bottom: 2em
+	background-image: url(../img/galerie.jpg)
+	background-repeat: no-repeat
+	background-size: 100% 100%
+	background-position: 50% 50%
+	&:hover
+		background-size: 105% 105%
+	img 
+		width: 100%
+	.gallery-show	
+		@extend .btn-main
+		text-align: center
+		color: #fff
+		background-color: transparent
+		border-color: #fff
+		position: absolute
+		left: 50%
+		top: 50%
+		margin-top: -0.8em
+		width: 10em
+		margin-left: -5em 
+		line-height: 1.6em
+		font-size: 1.2em
+		display: block
+		&:hover
+			color: $secondary
+			border-color: $secondary
+						
+						

@@ -11,6 +11,30 @@
 		display: inline-block
 	li 
 		padding: 0 2em	
+		position: relative
+		ul
+			display: none
+			position: absolute
+			top: 100%
+			padding-top: $spacing
+			left: 0
+			width: 100%
+			li 
+				padding: 0px
+				width: 100%
+				float: none
+			a 
+				display: block	
+				border: none		
+				&:hover 
+					background-color: $secondary
+					color: #000	
+					border: none
+		&:hover
+			ul 
+				display: block	
+				
+
 	a
 		+nav-level-1(#000,#fff,#000,$secondary)		
 		font-weight: 700
