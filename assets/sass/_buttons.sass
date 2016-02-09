@@ -2,10 +2,11 @@
 	background-color: #fff
 	color: $primary
 	border: 2px solid $primary
-	padding: 0.5em 1em
+	padding: 0em 1em
 	font-weight: 700
-	line-height: 50px
+	line-height: 2em
 	font-size: 1.2em
+	display: inline-block
 	+transition(all 0.2s ease-in)
 	&:hover
 		border-color: $secondary
@@ -13,8 +14,11 @@
 .btn-large
 	@extend .btn-main
 	font-size: 1.5em
-	padding: 0.5em 2.5em
+	padding: 0em 2.5em
 	margin-bottom: 1em
 .sign-up 
 	@extend .btn-large
 	width: 100%
+.btn-wide
+	@extend .btn-main
+	padding: 0em 5em

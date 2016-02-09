@@ -18,27 +18,33 @@
 	margin-bottom: 1em
 	+clearfix
 	.half 
-		margin-bottom: 1em
-		height: 200px	
+		margin-bottom: 60px
+		height: 220px	
 	.half:nth-child(2n+1)
 		border-right: 1px solid #000
 		border-left: none	
 	.half:nth-child(2n)
 		border-left: 1px solid #000
 		border-right: none	
-	.button-container
-		+clearfix
+.button-container
+	+clearfix
+	clear: both 
+	text-align: center
+	a
+		margin-bottom: 4*$spacing
 .next-workshop 
 	+clearfix
 	.next-workshop-main
 		+clearfix
-		margin-bottom: 2em
+		margin-bottom: 4*$spacing
 		.full
 			margin: 0
 			h2 
 				text-align: center
 			.half
 				margin: 0	
+		.half 
+			margin-bottom: 0		
 .half
 	+make-sm-column(6)
 	margin-bottom: 2em
@@ -78,7 +84,7 @@ h3
 .speaker-list
 	+clearfix
 	.workshop
-		width: 80%
+		width: 100%
 		margin: 0 auto
 .main 
 	+clearfix		
@@ -187,5 +193,7 @@ h3
 		&:hover
 			color: $secondary
 			border-color: $secondary
-						
+.pt2
+	padding-top: 2rem	
+
 						
