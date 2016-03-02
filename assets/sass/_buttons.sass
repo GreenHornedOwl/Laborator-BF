@@ -1,24 +1,26 @@
-.btn-main
-	background-color: #fff
-	color: $primary
-	border: 2px solid $primary
-	padding: 0em 1em
-	font-weight: 700
-	line-height: 2em
-	font-size: 1.2em
-	display: inline-block
-	+transition(all 0.2s ease-in)
-	&:hover
-		border-color: $secondary
-		color: $secondary
-.btn-large
-	@extend .btn-main
-	font-size: 1.5em
-	padding: 0em 2.5em
-	margin-bottom: 1em
-.sign-up 
-	@extend .btn-large
-	width: 100%
+.btn-main, .btn-large, .sign-up, .next-workshop-sign, .newsletter-sign-up, .btn-wide, .gallery-wrap .gallery-show
+  background-color: #fff
+  color: $primary
+  border: 2px solid $primary
+  padding: 0em 1em
+  font-weight: 700
+  line-height: 2em
+  font-size: 1.2em
+  display: inline-block
+  -webkit-transition: all 0.2s ease-in
+  transition: all 0.2s ease-in
+
+.btn-main:hover, .btn-large:hover, .sign-up:hover, .next-workshop-sign:hover, .newsletter-sign-up:hover, .btn-wide:hover, .gallery-wrap .gallery-show:hover
+  border-color: $secondary
+  color: $secondary
+
+.btn-large, .sign-up, .next-workshop-sign, .newsletter-sign-up
+  font-size: 1.5em
+  padding: 0em 2.5em
+  margin-bottom: 1em
+
+.sign-up
+  width: 100%
+
 .btn-wide
-	@extend .btn-main
-	padding: 0em 5em
+  padding: 0em 5em
